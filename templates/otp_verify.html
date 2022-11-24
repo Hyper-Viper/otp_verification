@@ -1,0 +1,28 @@
+<!-- 3rd -->
+
+<html>
+<head>
+<title>OTP Verification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+</head>
+<body >
+
+    <h1>OPT Verification</h1>
+    <hr><br>
+    <form method="POST" action="/otp">
+        <label>Mobile No.</label>
+        <div class="inps" id="numWrap" style="width: 250px; height: 40px; display: flex;">
+            <div style="background: linear-gradient(rgb(241, 241, 241), rgb(221, 221, 221), rgb(168, 168, 168)); width: 20%; height: 100%; display: inline-block; padding-block: 3.75%; font-weight: bold;">+91</div>
+            <input type="tel" name="number" style="width: 80%; text-align: left; border: 0;" id="num" maxlength="10">
+        </div><br>
+        <label>Enter OTP</label>
+        <input class="inps" type="number" name="recieved_otp" maxlength="6"><br>
+        <input type="submit" class="btn btn-primary" value="Login">
+    </form>
+
+</body>
+</html>
+

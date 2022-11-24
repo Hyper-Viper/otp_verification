@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<title>Login page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+</head>
+<body >
+
+    <h1>Login</h1>
+    <hr><br>
+    <form method="POST" action="/login">
+        <label>Username</label>
+        <input class="inps" type="text" name="username"><br>
+        <label>Password</label>
+        <input class="inps" type="password" name="password"><br>
+        <label>Mobile No.</label>
+        <div class="inps" id="numWrap" style="width: 250px; height: 40px; display: flex;">
+            <div style="background: linear-gradient(rgb(241, 241, 241), rgb(221, 221, 221), rgb(168, 168, 168)); width: 20%; height: 100%; display: inline-block; padding-block: 3.75%; font-weight: bold;">+91</div>
+            <input type="tel" name="number" style="width: 80%; text-align: left; border: 0;" id="num" maxlength="10">
+        </div><br>
+        <input type="submit" class="btn btn-primary" value="Get OTP">
+    </form>
+    
+</body>
+</html>
+
+

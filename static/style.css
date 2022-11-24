@@ -1,0 +1,78 @@
+body{
+    background-color: #67cebb;
+    text-align: center;
+    }
+
+h1{
+    font-weight: bold;
+    }
+
+h2{
+    color: #8B0000;
+    font-weight: bold;
+    }
+
+hr{
+    border: 5px solid black;
+    border-radius: 5px;
+    }
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    }
+
+p{
+    color: red;
+    }
+
+.inps{
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #767676;
+    transition: box-shadow .2s, border .2s;
+    }
+
+.inps:hover{
+    border: 1px solid #2a83e9;
+}
+
+.inps:focus{
+    border: 1px solid #2a83e9;
+    box-shadow: 0px 0px 5px #2a83e9;
+}
+
+div:has(+ #num){
+    border-right: 1px solid #767676;
+    transition: border .2s;
+}
+
+#num{
+    padding-left: 5px;
+}
+
+#numWrap:hover div{
+    border-right: 1px solid #2a83e9;
+}
+
+div:has(+ #num:focus){
+    border-right: 1px solid #2a83e9;
+}
+
+#numWrap:has(> #num:focus){
+    border: 1px solid #2a83e9;
+    box-shadow: 0px 0px 5px #2a83e9;
+}
+
+input{
+    outline: none;
+    }
+
+label{
+    font-weight: bold;
+    text-align: center;
+    }
